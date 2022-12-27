@@ -1,7 +1,15 @@
 import { useGLTF } from "@react-three/drei"
+import { useEffect } from 'react';
 
 export function Frog(props) {
     const { nodes, materials } = useGLTF("/frog.glb")
+
+    useEffect(() => {
+        const loading = document.getElementsByClassName('loading')[0].style
+        loading.display = 'none'
+        console.log(loading)
+    }, [])
+
     return (
         <group {...props} dispose={null} rotation-y={Math.PI}>
             <group position={[0, 0.2, 0]}>

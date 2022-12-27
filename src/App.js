@@ -8,13 +8,16 @@ import Interface from './Interface'
 export default function App() {
     const [cameraShakeFrequency, setCameraShakeFrequency] = useState(1)
     return (
-        <Suspense fallback={
+        <>
             <div className='loading'>Loading...</div>
-        } >
             <Canvas camera={{ position: [0, 1, 3] }} >
                 <Model cameraShakeFrequency={cameraShakeFrequency} />
             </Canvas>
             <Interface setCameraShakeFrequency={setCameraShakeFrequency} />
-        </Suspense>
+        </>
+        // </Suspense>
     )
 }
+
+        // <Suspense fallback={
+        //    // } >

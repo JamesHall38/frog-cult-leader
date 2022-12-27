@@ -22,15 +22,14 @@ body,
 .loading {
 	width: 100vw;
 	height: 100vh;
+	position: fixed;
+	z-index: 100;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #101010;
 	text-transform: uppercase;
 	color: white;
-	font-family: 'Eczar', serif;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Piazzolla', serif;
 }
 
 .interface {
