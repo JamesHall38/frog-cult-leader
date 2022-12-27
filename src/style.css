@@ -47,7 +47,7 @@ body,
 	pointer-events: auto;
 	position: absolute;
 	display: flex;
-	top: 85vh;
+	bottom: 10vh;
 	align-items: center;
 	justify-content: center;
 	width: 250px;
@@ -109,6 +109,6 @@ body,
 
 .congrats {
 	position: absolute;
-	top: 85vh;
+	bottom: 10vh;
 	font-size: 22px;
 }
